@@ -1,0 +1,166 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f1e8;
+    color: #333;
+}
+
+
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color:none; 
+    color:#fff;
+    
+
+}
+.navbar .logo a {
+    font-size: 1.8rem;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+
+}
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.1rem;
+
+}
+
+.nav-links li{
+    background-color: #332316;
+}
+
+
+ .hamburger {
+    display: none;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.nav-links li a:hover {
+    color: #ffcc00;
+  }
+
+@media (max-width: 768px) {
+    .nav-links{
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        flex-direction: column;
+        gap: 1rem;
+        display: flex;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .hamburger{
+        display: flex;
+    }
+} 
+
+
+
+
+/* Container for center alignment */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+/* Header */
+header {
+    background-image: url(gallary.png);
+    background-size: contain;
+    color: black;
+    text-align: center;
+    padding-bottom: 100px; 
+
+}
+
+header h1 {
+    font-size: 3rem;
+    padding-top: 90px;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+
+/* Section Styling */
+section {
+    padding: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Skills List */
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    font-size: 1.2rem;
+    background-color: #e4e4e4;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+
+ .artwork {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    padding-left: 80px;
+} 
+.artwork img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+}
+.artwork img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+#contact h3{
+    padding-bottom: 50px;
+    color: blue;
+
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+}
